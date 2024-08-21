@@ -24,7 +24,7 @@ if (!fs.existsSync(downloadPath)) {
 }
 
 (async () => {
-  const browser = await puppeteer.launch({ headless: false });
+  const browser = await puppeteer.launch();
 
   try {
     const page = await browser.newPage();
